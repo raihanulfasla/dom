@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Multipleimage </title>
+</head>
+
+<body>
+
+
+
+    <style>
+
+        
+        body {
+            background-color: darkolivegreen;
+            color: #F5F5F5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            height: 100vh;
+            flex-direction: column;
+            transition: 0.5s;
+        }
+
+        button{
+            border: 1px dashed  #F5F5F5;
+            background-color: transparent;
+            color: #F5F5F5;
+            padding:10px;
+            transition: 0.2s;
+            margin: 5px;
+
+        }
+        button:hover{
+            background-color: grey;
+            color: black;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        img{
+            width: 100%;
+            max-height: 300px;
+            border-radius: 15px;
+        }
+
+    </style>
+    <h1><b>INDIA</b></h1>
+
+
+    <div class="" style="max-width: 500px;">
+        <!-- if click button change content -->
+        <!-- can use class name or id -->
+        <div class="" style="text-align: center;">
+            <button id="button1" >Image1</button>
+            <button id="button2" > Image 2</button>
+            <button id="button3" >Image 3 </button>
+            <button id="button4" >Image 4</button>
+        </div>
+        <!-- content -->
+        <div class="" style="margin-top: 20px;">
+            <img id="image" src="image5.avif" alt="">
+        </div>
+    </div>
+
+
+
+
+
+    <script>
+
+        
+        document.getElementById("button1") 
+        document.getElementById("button2") 
+        document.getElementById("button3") 
+        document.getElementById("button4") 
+    
+        console.log(document.getElementById("button1"))
+        console.log(document.getElementById("button2"))
+        console.log(document.getElementById("button3"))
+        console.log(document.getElementById("button4"))
+        
+        
+        const button1 = document.getElementById("button1");
+        const button2 = document.getElementById("button2");
+        const button3 = document.getElementById("button3");
+        const button4 = document.getElementById("button4");
+        document.getElementById("image");
+        console.log(document.getElementById("image"))
+        
+         const image = document.getElementById("image");
+
+    
+        button1.addEventListener("click",function (params) {
+            image.src = 'image1.webp'
+        }) 
+        button2.addEventListener("click",function (params) {
+            image.src = 'image2.jpeg'
+        }) 
+        button3.addEventListener("click",function (params) {
+            image.src = 'image3.jpeg'
+        }) 
+        button4.addEventListener("click",function (params) {
+            image.src = 'image4.jpeg'
+        }) 
+        
+
+
+    </script>
+
+</body>
+
+</html>
